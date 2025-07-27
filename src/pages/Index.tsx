@@ -104,18 +104,13 @@ const Index = () => {
     .slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background to-secondary/20">
+    <div className="bg-gradient-to-br from-background to-secondary/20 min-h-full">
       <div className="container mx-auto px-4 py-6 max-w-7xl">
         {/* Header */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 mb-8">
-          <div className="flex items-center gap-3">
-            <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <GraduationCap className="h-6 w-6 text-primary-foreground" />
-            </div>
-            <div>
-              <h1 className="text-3xl font-bold text-foreground">StudyPlanner</h1>
-              <p className="text-muted-foreground">Organiza tus tareas y alcanza tus metas</p>
-            </div>
+          <div>
+            <h1 className="text-3xl font-bold text-foreground">Mis Tareas</h1>
+            <p className="text-muted-foreground">Organiza tus tareas y alcanza tus metas</p>
           </div>
           <Button onClick={() => setIsFormOpen(true)} className="gap-2">
             <Plus className="h-4 w-4" />
